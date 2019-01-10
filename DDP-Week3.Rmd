@@ -1,0 +1,86 @@
+---
+title: "Developing Data Products Week 3"
+author: "Carlomagno Anastacio"
+date: "January 10, 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,warning = FALSE,message = FALSE)
+```
+
+## Introduction
+This is an exercise on the application of the lessons in plotly.
+
+Create a web page presentation using R Markdown that features a plot created with Plotly. Host your webpage on either GitHub Pages, RPubs, or NeoCities. Your webpage must contain the date that you created the document, and it must contain a plot created with Plotly. We would love to see you show off your creativity!
+
+
+```{r}
+library(plotly)        
+
+setwd("D:/01 Daddy/Proj/Developing Data Products/Week 3")
+dataSource <- read.csv("assignmentdata.csv",header=TRUE,sep=",",fileEncoding="UTF-8-BOM")
+
+dataSource$FGPct = dataSource$FGPct * 100
+dataSource$RegWPct = dataSource$RegWPct * 100
+```
+
+After loading the needed libraries, we create some simple plots to demonstrate the capability of plotly.  As an example, we try to investigate the individual and team performances of Michael Jordan, Kobe Bryant, and LeBron James' on how and when they win championships in the NBA.
+
+To narrow down the scope, we will focus on the last 12 NBA playoff appearances of each player.  Data has been sourced from [Wikipedia](http://en.wikipedia.org/).
+
+
+## Individual Performance
+Let us first see their individual performances and see which contributes to their team winning.
+
+```{r}
+plot_ly(dataSource)%>%
+  add_trace(
+    y=~PPG,
+    x=~Appearance,
+    type="scatter",
+    mode="lines+markers",
+    size=~as.integer(Champ),
+    color=~Player,
+    text = ~paste0("Season:",Year,"\nFinish:",Finish,
+                   "\nFG%:",FGPct,"\nResult:",Champ,
+                   "\nMinutes per game:", Minutes,"\nAge  :",Age),
+    hoverinfo = 'text'
+  )%>% 
+  layout(
+         yaxis=list(title = "Points per Game"),
+         xaxis=list(title = "<-- Earliest [Playoff Appearance] Latest -->"),
+         legend = list(orientation = 'v', 
+                       font = list(family = "sans-serif",size = 10,color = "#000"))
+  )
+```
+From the plot, we can see that points do not affect the outcome of a championship.  Even with sub-30 output, Bryant and James are still capable of winning an NBA ring. In contrast, having above-35 points per game does not equate to winning.  Also, in terms of points, players reach peak athleticism by their mid-20s.
+
+## Team Regular Season Performance
+Next, let us see how dominant each players' team is before reaching the playoffs.
+
+```{r}
+plot_ly(dataSource)%>%
+  add_trace(
+    y=~RegWPct,
+    x=~Appearance,
+    type="bar",
+    color=~Player,
+    text = ~paste0("Season:",Year,"\nFinish:",Finish,"\nResult:",Champ),
+    hoverinfo = 'text'
+  )%>% 
+  layout(
+         yaxis=list(title = "Regular Season Win %"),
+         xaxis=list(title = "<-- Earliest [Playoff Appearance] Latest -->"),
+         legend = list(orientation = 'v', 
+                       font = list(family = "sans-serif",size = 10,color = "#000"))
+  )
+```
+From this plot, we see that a high win percentage may be due to a strong team.  Lower points per game from the 3 players mentioned can indicate better ball movement, sharing the points among each other. 
+
+## Analysis
+While individual performance is a factor, team strength can play a role in winning a championship.  It goes to show that even with a dominant point game, and high win percentage, a 1-man show does not mean a championship, rather good teamwork has a better chance.  Finishing all games in one season finishing 1st or 2nd would improve chances, but would not automatically win a championship.
+
+It is an interesting trivia that all 3 players have won on their 10th playoff appearance in the last 12 playoffs they have been -and they are all in their early 30s by then.
+
+End of Exercise

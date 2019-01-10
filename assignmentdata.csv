@@ -1,0 +1,37 @@
+﻿Appearance,Player,Minutes,FGPct,PPG,Champ,Age,RegW,RegL,RegWPct,Finish,Year
+1,Jordan,45,0.505,43.7,Did not win championship,21,30,52,0.366,8th,1985 - 86
+2,Jordan,42.7,0.417,35.7,Did not win championship,22,40,42,0.488,8th,1986 - 87
+3,Jordan,42.7,0.531,36.3,Did not win championship,23,50,32,0.61,3rd,1987 - 88
+4,Jordan,42.2,0.51,34.8,Did not win championship,24,47,35,0.573,6th,1988 - 89
+5,Jordan,42.1,0.514,36.7,Did not win championship,25,55,27,0.671,3rd,1989 - 90
+6,Jordan,40.5,0.524,31.1,Won championship,26,61,21,0.744,1st,1990 - 91
+7,Jordan,41.8,0.499,34.5,Won championship,27,67,15,0.817,1st,1991 - 92
+8,Jordan,41.2,0.475,35.1,Won championship,28,57,25,0.695,2nd,1992 - 93
+9,Jordan,42,0.484,31.5,Did not win championship,30,47,35,0.573,5th,1994 - 95
+10,Jordan,40.7,0.459,30.7,Won championship,31,72,10,0.878,1st,1995 - 96
+11,Jordan,42.3,0.456,31.1,Won championship,32,69,13,0.841,1st,1996 - 97
+12,Jordan,41.5,0.462,32.4,Won championship,33,62,20,0.756,1st,1997 - 98
+1,James,44.7,0.416,25.1,Did not win championship,21,50,32,0.61,2nd,2006 - 07
+2,James,42.5,0.411,28.2,Did not win championship,22,45,37,0.549,4th,2007 - 08
+3,James,41.4,0.51,35.3,Did not win championship,23,66,16,0.805,1st,2008 - 09
+4,James,41.8,0.502,29.1,Did not win championship,24,61,21,0.744,1st,2009 - 10
+5,James,43.9,0.466,23.7,Did not win championship,25,58,24,0.707,2nd,2010 - 11
+6,James,42.7,0.5,30.3,Won championship,26,46,20,0.697,2nd,2011 - 12
+7,James,41.7,0.491,25.9,Won championship,27,66,16,0.805,1st,2012 - 13
+8,James,38.2,0.565,27.4,Did not win championship,28,54,28,0.659,2nd,2013 - 14
+9,James,42.2,0.417,30.1,Did not win championship,29,53,29,0.646,2nd,2014 - 15
+10,James,39.1,0.525,26.3,Won championship,30,57,25,0.695,1st,2015 - 16
+11,James,41.3,0.565,32.8,Did not win championship,31,51,31,0.622,2nd,2016 - 17
+12,James,41.9,0.539,34,Did not win championship,32,50,32,0.61,4th,2017 - 18
+1,Bryant,39,0.442,21.1,Won championship,21,67,15,0.817,1st,1999 - 00
+2,Bryant,43.4,0.469,29.4,Won championship,22,56,26,0.683,2nd,2000 - 01
+3,Bryant,43.8,0.434,26.6,Won championship,23,58,24,0.707,3rd,2001 - 02
+4,Bryant,44.3,0.432,32.1,Did not win championship,24,50,32,0.61,5th,2002 - 03
+5,Bryant,44.2,0.413,24.5,Did not win championship,25,56,26,0.683,2nd,2003 - 04
+6,Bryant,44.9,0.497,27.9,Did not win championship,27,45,37,0.549,7th,2005 - 06
+7,Bryant,43,0.462,32.8,Did not win championship,28,42,40,0.512,7th,2006 - 07
+8,Bryant,41.1,0.479,30.1,Did not win championship,29,57,25,0.695,1st,2007 - 08
+9,Bryant,40.8,0.457,30.2,Won championship,30,65,17,0.793,1st,2008 - 09
+10,Bryant,40.1,0.458,29.2,Won championship,31,57,25,0.695,1st,2009 - 10
+11,Bryant,35.4,0.446,22.8,Did not win championship,32,57,25,0.695,2nd,2010 - 11
+12,Bryant,39.7,0.439,30,Did not win championship,33,41,25,0.621,3rd,2011 - 12
